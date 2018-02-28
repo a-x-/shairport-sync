@@ -67,7 +67,7 @@ RUN apk add --update \
         /tmp/shairport-sync \
         /lib/apk/db/* \
         /etc/ssl \
-        /usr/local/etc/shairport-sync*
+        /usr/local/etc/shairport-sync* \
         /var/cache/apk/*
 
 COPY start.sh /start.sh
