@@ -74,8 +74,6 @@ COPY start.sh /start.sh
 
 COPY shairport-sync.conf /usr/local/etc/shairport-sync.conf
 
-VOLUME "/usr/local/etc/shairport-sync.conf"
-
 RUN chmod a+x /start.sh
 
 ENTRYPOINT [ "/start.sh" ]
