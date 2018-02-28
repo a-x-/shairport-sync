@@ -3,7 +3,7 @@
 
 Dockerized version of [shairport-sync](https://github.com/mikebrady/shairport-sync).
 
-# Build
+### Build
 
 ```bash
 # Build version 2.8.1
@@ -13,7 +13,7 @@ docker build -t knapoc/shairport-sync .
 docker build --build-arg SHAIRPORT_VERSION=2.8.0 --build-arg ALAC_VERSION= -t knapoc/shairport-sync:2.8.0 .
 ```
 
-# Run
+### Run
 
 ```bash
 docker run -d \
@@ -24,7 +24,7 @@ docker run -d \
     knapoc/shairport-sync
 ```
 
-# Compose
+### Compose
 
 ```yaml
   version: '2'
