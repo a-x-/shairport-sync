@@ -1,4 +1,3 @@
-# Shairport Sync docker
 FROM alpine
 
 ARG SHAIRPORT_VERSION=master
@@ -53,7 +52,7 @@ RUN apk add --update \
         avahi-dev \
         openssl-dev \
         soxr-dev \
-    && apk add \
+    && apk add --update \
         dbus \
         alsa-lib \
         libdaemon \
