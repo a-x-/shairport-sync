@@ -25,12 +25,13 @@ RUN apk --no-cache add \
       && cd shairport-sync \
     && autoreconf -i -f  \
     && ./configure \
-	    --with-alsa \
-	    --with-avahi \
-	    --with-pipe \
-	    --with-ssl=openssl \
-	    --with-metadata \
-	    --with-apple-alac \
+	--with-alsa \
+	--with-avahi \
+	--with-pipe \
+	--with-ssl=openssl \
+	--with-metadata \
+	--with-apple-alac \
+	--with-mqtt-client \
     && make \
     && make install \
     && cd \
